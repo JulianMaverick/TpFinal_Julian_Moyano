@@ -46,12 +46,52 @@ namespace TpFinal_Julian_Moyano.Forms
             Cargar();
         }
 
-        private void BtnModificar_Click(object sender, EventArgs e)
+        private void Cargar()
+        {
+            RepositorioProveedores repositorioProveedores = new RepositorioProveedores();
+            DgvProveedores.DataSource = repositorioProveedores.ListarProveedors().ToList();
+        }
+
+
+
+        private void DtpFechaNac_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void BtnAgregar_Click(object sender, EventArgs e)
+        private void DgvProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            SeleccionarProveedor();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show($"¿Estas seguro que desea salir?", "Eliminar", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Close();
+            }
+        }
+
+        private void BtnEliminar_Click_1(object sender, EventArgs e)
+        {
+            RepositorioProveedores repositorioClientes = new RepositorioProveedores();
+            int id = int.Parse(DgvProveedores.SelectedRows[0].Cells[0].Value.ToString());
+
+            Proveedor proveedorSeleccionado = repositorioClientes.BuscarProveedorPorId(id);
+
+            DialogResult resultado = MessageBox.Show($"¿Seguro que quieres eliminar a {proveedorSeleccionado.Nombre}?", "Eliminar", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                repositorioClientes.EliminarProveedor(proveedorSeleccionado);
+
+                Cargar();
+            }
+        }
+
+        private void BtnAgregar_Click_1(object sender, EventArgs e)
         {
             RepositorioProveedores repositorioProveedores = new RepositorioProveedores();
             Proveedor proveedor = new Proveedor();
@@ -72,36 +112,41 @@ namespace TpFinal_Julian_Moyano.Forms
             Cargar();
         }
 
-        private void Cargar()
+        private void BtnModificar_Click_1(object sender, EventArgs e)
         {
             RepositorioProveedores repositorioProveedores = new RepositorioProveedores();
-            DgvProveedores.DataSource = repositorioProveedores.ListarProveedors().ToList();
-        }
-
-
-
-        private void BtnEliminar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DtpFechaNac_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DgvProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            SeleccionarProveedor();
-        }
-
-        private void BtnSalir_Click(object sender, EventArgs e)
-        {
-            DialogResult resultado = MessageBox.Show($"¿Estas seguro que desea salir?", "Eliminar", MessageBoxButtons.YesNo);
-
-            if (resultado == DialogResult.Yes)
+            int id = 0;
+            try
             {
-                Close();
+                id = int.Parse(DgvProveedores.SelectedRows[0].Cells[0].Value.ToString());
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            if (id != 0)
+            {
+
+                Proveedor proveedor = repositorioProveedores.BuscarProveedorPorId(id);
+                Usuario usuario = proveedor.Usuario;
+
+                proveedor.Nombre = TxtNombre.Text;
+                proveedor.FechaNacimiento = DtpFechaNac.Value;
+                proveedor.CondicionIva = CbIVA.Text;
+                proveedor.Estado = ChbEstado.Checked;
+
+                usuario.NombreUsuario = TxtUsuario.Text;
+                usuario.Contraseña = TxtContraseña.Text;
+                usuario.Admin = false;
+
+                proveedor.Usuario = usuario;
+
+                repositorioProveedores.ModificarProveedor(proveedor);
+
+                Cargar();
+
             }
         }
     }

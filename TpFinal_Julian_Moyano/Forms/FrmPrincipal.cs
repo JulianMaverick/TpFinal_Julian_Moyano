@@ -34,5 +34,15 @@ namespace TpFinal_Julian_Moyano.Forms
             FrmProveedor form = new FrmProveedor();
             form.Show();
         }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show($"¿Estas seguro que desea salir?", "Eliminar", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Close();
+            }
+        }
     }
 }

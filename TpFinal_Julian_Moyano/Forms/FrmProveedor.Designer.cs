@@ -199,6 +199,7 @@ namespace TpFinal_Julian_Moyano.Forms
             this.BtnEliminar.TabIndex = 35;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click_1);
             // 
             // BtnAgregar
             // 
@@ -210,6 +211,7 @@ namespace TpFinal_Julian_Moyano.Forms
             this.BtnAgregar.TabIndex = 34;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.UseVisualStyleBackColor = false;
+            this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click_1);
             // 
             // BtnModificar
             // 
@@ -222,6 +224,7 @@ namespace TpFinal_Julian_Moyano.Forms
             this.BtnModificar.TabIndex = 33;
             this.BtnModificar.Text = "Modificar";
             this.BtnModificar.UseVisualStyleBackColor = false;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click_1);
             // 
             // FrmProveedor
             // 
