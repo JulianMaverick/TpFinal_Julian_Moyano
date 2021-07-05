@@ -141,5 +141,15 @@ namespace TpFinal_Julian_Moyano
         {
             SeleccionarCliente ();
         }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show($"¿Estas seguro que desea salir?", "Eliminar", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Close();
+            }
+        }
     }
 }

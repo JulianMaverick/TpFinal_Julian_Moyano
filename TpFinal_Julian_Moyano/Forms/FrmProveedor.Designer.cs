@@ -29,9 +29,6 @@ namespace TpFinal_Julian_Moyano.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.BtnEliminar = new System.Windows.Forms.Button();
-            this.BtnAgregar = new System.Windows.Forms.Button();
-            this.BtnModificar = new System.Windows.Forms.Button();
             this.TxtContraseña = new System.Windows.Forms.TextBox();
             this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.CbIVA = new System.Windows.Forms.ComboBox();
@@ -45,38 +42,12 @@ namespace TpFinal_Julian_Moyano.Forms
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.BtnSalir = new System.Windows.Forms.Button();
+            this.BtnEliminar = new System.Windows.Forms.Button();
+            this.BtnAgregar = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvProveedores)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BtnEliminar
-            // 
-            this.BtnEliminar.Location = new System.Drawing.Point(486, 325);
-            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(56, 35);
-            this.BtnEliminar.TabIndex = 31;
-            this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // BtnAgregar
-            // 
-            this.BtnAgregar.Location = new System.Drawing.Point(394, 325);
-            this.BtnAgregar.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(56, 35);
-            this.BtnAgregar.TabIndex = 30;
-            this.BtnAgregar.Text = "Agregar";
-            this.BtnAgregar.UseVisualStyleBackColor = true;
-            // 
-            // BtnModificar
-            // 
-            this.BtnModificar.Location = new System.Drawing.Point(301, 325);
-            this.BtnModificar.Margin = new System.Windows.Forms.Padding(2);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(62, 35);
-            this.BtnModificar.TabIndex = 29;
-            this.BtnModificar.Text = "Modificar";
-            this.BtnModificar.UseVisualStyleBackColor = true;
             // 
             // TxtContraseña
             // 
@@ -136,7 +107,7 @@ namespace TpFinal_Julian_Moyano.Forms
             // DgvProveedores
             // 
             this.DgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvProveedores.Location = new System.Drawing.Point(41, 56);
+            this.DgvProveedores.Location = new System.Drawing.Point(38, 55);
             this.DgvProveedores.Margin = new System.Windows.Forms.Padding(2);
             this.DgvProveedores.MultiSelect = false;
             this.DgvProveedores.Name = "DgvProveedores";
@@ -207,6 +178,51 @@ namespace TpFinal_Julian_Moyano.Forms
             this.label1.TabIndex = 16;
             this.label1.Text = "Nombre:";
             // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.Red;
+            this.BtnSalir.Location = new System.Drawing.Point(12, 365);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.TabIndex = 32;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
+            // 
+            // BtnEliminar
+            // 
+            this.BtnEliminar.BackColor = System.Drawing.Color.Red;
+            this.BtnEliminar.Location = new System.Drawing.Point(461, 341);
+            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnEliminar.Name = "BtnEliminar";
+            this.BtnEliminar.Size = new System.Drawing.Size(80, 35);
+            this.BtnEliminar.TabIndex = 35;
+            this.BtnEliminar.Text = "Eliminar";
+            this.BtnEliminar.UseVisualStyleBackColor = false;
+            // 
+            // BtnAgregar
+            // 
+            this.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnAgregar.Location = new System.Drawing.Point(366, 341);
+            this.BtnAgregar.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnAgregar.Name = "BtnAgregar";
+            this.BtnAgregar.Size = new System.Drawing.Size(80, 35);
+            this.BtnAgregar.TabIndex = 34;
+            this.BtnAgregar.Text = "Agregar";
+            this.BtnAgregar.UseVisualStyleBackColor = false;
+            // 
+            // BtnModificar
+            // 
+            this.BtnModificar.BackColor = System.Drawing.Color.Yellow;
+            this.BtnModificar.ForeColor = System.Drawing.Color.Black;
+            this.BtnModificar.Location = new System.Drawing.Point(271, 341);
+            this.BtnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(80, 35);
+            this.BtnModificar.TabIndex = 33;
+            this.BtnModificar.Text = "Modificar";
+            this.BtnModificar.UseVisualStyleBackColor = false;
+            // 
             // FrmProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -215,6 +231,7 @@ namespace TpFinal_Julian_Moyano.Forms
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.BtnModificar);
+            this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.TxtContraseña);
             this.Controls.Add(this.TxtUsuario);
             this.Controls.Add(this.CbIVA);
@@ -229,7 +246,7 @@ namespace TpFinal_Julian_Moyano.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FrmProveedor";
-            this.Text = "FrmProveedor";
+            this.Text = "Proveedores";
             ((System.ComponentModel.ISupportInitialize)(this.DgvProveedores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,10 +254,6 @@ namespace TpFinal_Julian_Moyano.Forms
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BtnEliminar;
-        private System.Windows.Forms.Button BtnAgregar;
-        private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.TextBox TxtContraseña;
         private System.Windows.Forms.TextBox TxtUsuario;
         private System.Windows.Forms.ComboBox CbIVA;
@@ -254,5 +267,9 @@ namespace TpFinal_Julian_Moyano.Forms
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button BtnSalir;
+        private System.Windows.Forms.Button BtnEliminar;
+        private System.Windows.Forms.Button BtnAgregar;
+        private System.Windows.Forms.Button BtnModificar;
     }
 }

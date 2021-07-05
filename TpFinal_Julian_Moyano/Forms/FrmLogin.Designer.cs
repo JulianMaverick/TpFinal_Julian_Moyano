@@ -41,9 +41,10 @@ namespace TpFinal_Julian_Moyano.Forms
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.Location = new System.Drawing.Point(273, 128);
+            this.TxtUsuario.Location = new System.Drawing.Point(171, 101);
+            this.TxtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(167, 22);
+            this.TxtUsuario.Size = new System.Drawing.Size(126, 20);
             this.TxtUsuario.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -54,62 +55,70 @@ namespace TpFinal_Julian_Moyano.Forms
             // 
             // TxtContraseña
             // 
-            this.TxtContraseña.Location = new System.Drawing.Point(273, 200);
+            this.TxtContraseña.Location = new System.Drawing.Point(171, 159);
+            this.TxtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtContraseña.Name = "TxtContraseña";
             this.TxtContraseña.PasswordChar = '*';
-            this.TxtContraseña.Size = new System.Drawing.Size(167, 22);
+            this.TxtContraseña.Size = new System.Drawing.Size(126, 20);
             this.TxtContraseña.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(160, 128);
+            this.label1.Location = new System.Drawing.Point(86, 101);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 17);
+            this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "Usuario: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(160, 200);
+            this.label2.Location = new System.Drawing.Point(86, 159);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 17);
+            this.label2.Size = new System.Drawing.Size(64, 13);
             this.label2.TabIndex = 4;
             this.label2.Text = "Contraseña:";
             // 
             // BtnIngresar
             // 
-            this.BtnIngresar.Location = new System.Drawing.Point(231, 321);
+            this.BtnIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnIngresar.Location = new System.Drawing.Point(89, 258);
+            this.BtnIngresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnIngresar.Name = "BtnIngresar";
-            this.BtnIngresar.Size = new System.Drawing.Size(75, 38);
+            this.BtnIngresar.Size = new System.Drawing.Size(81, 31);
             this.BtnIngresar.TabIndex = 5;
             this.BtnIngresar.Text = "Ingresar";
-            this.BtnIngresar.UseVisualStyleBackColor = true;
+            this.BtnIngresar.UseVisualStyleBackColor = false;
             this.BtnIngresar.Click += new System.EventHandler(this.BtnIngresar_Click);
             // 
             // BtnSalir
             // 
-            this.BtnSalir.Location = new System.Drawing.Point(374, 321);
+            this.BtnSalir.BackColor = System.Drawing.Color.Red;
+            this.BtnSalir.Location = new System.Drawing.Point(216, 258);
+            this.BtnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnSalir.Name = "BtnSalir";
-            this.BtnSalir.Size = new System.Drawing.Size(75, 38);
+            this.BtnSalir.Size = new System.Drawing.Size(81, 31);
             this.BtnSalir.TabIndex = 6;
             this.BtnSalir.Text = "Salir";
-            this.BtnSalir.UseVisualStyleBackColor = true;
+            this.BtnSalir.UseVisualStyleBackColor = false;
             this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
-            // Login
+            // FrmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(391, 353);
             this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnIngresar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtContraseña);
             this.Controls.Add(this.TxtUsuario);
-            this.Name = "Login";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "FrmLogin";
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

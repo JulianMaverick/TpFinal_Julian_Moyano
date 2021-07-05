@@ -48,40 +48,7 @@ namespace TpFinal_Julian_Moyano.Forms
 
         private void BtnModificar_Click(object sender, EventArgs e)
         {
-            RepositorioProveedores repositorioProveedores = new RepositorioProveedores();
-            int id = 0;
-            try
-            {
-                id = int.Parse(DgvProveedores.SelectedRows[0].Cells[0].Value.ToString());
-            }
-            catch (Exception)
-            {
 
-                throw;
-            }
-
-            if (id != 0)
-            {
-
-                Proveedor proveedor = repositorioProveedores.BuscarProveedorPorId(id);
-                Usuario usuario = proveedor.Usuario;
-
-                proveedor.Nombre = TxtNombre.Text;
-                proveedor.FechaNacimiento = DtpFechaNac.Value;
-                proveedor.CondicionIva = CbIVA.Text;
-                proveedor.Estado = ChbEstado.Checked;
-
-                usuario.NombreUsuario = TxtUsuario.Text;
-                usuario.Contraseña = TxtContraseña.Text;
-                usuario.Admin = false;
-
-                proveedor.Usuario = usuario;
-
-                repositorioProveedores.ModificarProveedor(proveedor);
-
-                Cargar();
-
-            }
         }
 
         private void BtnAgregar_Click(object sender, EventArgs e)
@@ -115,20 +82,6 @@ namespace TpFinal_Julian_Moyano.Forms
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-            RepositorioProveedores repositorioProveedores = new RepositorioProveedores();
-            int id = int.Parse(DgvProveedores.SelectedRows[0].Cells[0].Value.ToString());
-
-            Proveedor proveedorSeleccionado = repositorioProveedores.BuscarProveedorPorId(id);
-
-            DialogResult resultado = MessageBox.Show($"¿Seguro que quieres eliminar a {proveedorSeleccionado.Nombre}?", "Eliminar", MessageBoxButtons.YesNo);
-
-            if (resultado == DialogResult.Yes)
-            {
-                repositorioProveedores.EliminarProveedor(proveedorSeleccionado);
-
-                Cargar();
-            }
-
 
         }
 
@@ -140,6 +93,16 @@ namespace TpFinal_Julian_Moyano.Forms
         private void DgvProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             SeleccionarProveedor();
+        }
+
+        private void BtnSalir_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show($"¿Estas seguro que desea salir?", "Eliminar", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Close();
+            }
         }
     }
 }

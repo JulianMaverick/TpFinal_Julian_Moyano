@@ -25,13 +25,15 @@ namespace TpFinal_Julian_Moyano.Forms
             string usuarioNombre = TxtUsuario.Text;
             string contraseña = TxtContraseña.Text;
             bool acceso = false;
+            Usuario usuario = null;
             List<Usuario> Listausuarios = repositorio.ListarUsuarios().ToList();
 
             foreach (var item in Listausuarios)
             {
                 if (item.NombreUsuario.Equals (usuarioNombre ) && item.Contraseña.Equals(contraseña))
                 {
-                    acceso = true; 
+                    acceso = true;
+                    usuario = item;
 
                 }
 
@@ -39,8 +41,8 @@ namespace TpFinal_Julian_Moyano.Forms
 
             if (acceso)
             {
-                FrmClientes frmClientes = new FrmClientes();
-                frmClientes.Show();
+                FrmPrincipal form = new FrmPrincipal(usuario);
+                form.Show();
                 this.Close(); 
             }
             else
@@ -51,7 +53,12 @@ namespace TpFinal_Julian_Moyano.Forms
 
         private void BtnSalir_Click(object sender, EventArgs e)
         {
-            Close();
+            DialogResult resultado = MessageBox.Show($"¿Estas seguro que desea salir?", "Eliminar", MessageBoxButtons.YesNo);
+
+            if (resultado == DialogResult.Yes)
+            {
+                Close();
+            }
         }
     }
 }

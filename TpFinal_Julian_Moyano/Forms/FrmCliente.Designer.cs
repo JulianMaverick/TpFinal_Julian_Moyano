@@ -45,6 +45,7 @@ namespace TpFinal_Julian_Moyano
             this.BtnModificar = new System.Windows.Forms.Button();
             this.BtnAgregar = new System.Windows.Forms.Button();
             this.BtnEliminar = new System.Windows.Forms.Button();
+            this.BtnSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,7 +113,7 @@ namespace TpFinal_Julian_Moyano
             // 
             this.DgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvClientes.Location = new System.Drawing.Point(22, 37);
-            this.DgvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DgvClientes.Margin = new System.Windows.Forms.Padding(2);
             this.DgvClientes.MultiSelect = false;
             this.DgvClientes.Name = "DgvClientes";
             this.DgvClientes.ReadOnly = true;
@@ -127,7 +128,7 @@ namespace TpFinal_Julian_Moyano
             // 
             this.TxtNombre.BackColor = System.Drawing.SystemColors.HighlightText;
             this.TxtNombre.Location = new System.Drawing.Point(414, 36);
-            this.TxtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.TxtNombre.Name = "TxtNombre";
             this.TxtNombre.Size = new System.Drawing.Size(76, 20);
             this.TxtNombre.TabIndex = 7;
@@ -136,7 +137,7 @@ namespace TpFinal_Julian_Moyano
             // 
             this.DtpFechaNac.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtpFechaNac.Location = new System.Drawing.Point(414, 68);
-            this.DtpFechaNac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DtpFechaNac.Margin = new System.Windows.Forms.Padding(2);
             this.DtpFechaNac.Name = "DtpFechaNac";
             this.DtpFechaNac.Size = new System.Drawing.Size(76, 20);
             this.DtpFechaNac.TabIndex = 8;
@@ -146,7 +147,7 @@ namespace TpFinal_Julian_Moyano
             // 
             this.ChbEstado.AutoSize = true;
             this.ChbEstado.Location = new System.Drawing.Point(416, 110);
-            this.ChbEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ChbEstado.Margin = new System.Windows.Forms.Padding(2);
             this.ChbEstado.Name = "ChbEstado";
             this.ChbEstado.Size = new System.Drawing.Size(74, 17);
             this.ChbEstado.TabIndex = 9;
@@ -157,7 +158,7 @@ namespace TpFinal_Julian_Moyano
             // 
             this.CbIVA.FormattingEnabled = true;
             this.CbIVA.Location = new System.Drawing.Point(414, 142);
-            this.CbIVA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CbIVA.Margin = new System.Windows.Forms.Padding(2);
             this.CbIVA.Name = "CbIVA";
             this.CbIVA.Size = new System.Drawing.Size(76, 21);
             this.CbIVA.TabIndex = 10;
@@ -165,7 +166,7 @@ namespace TpFinal_Julian_Moyano
             // TxtUsuario
             // 
             this.TxtUsuario.Location = new System.Drawing.Point(414, 178);
-            this.TxtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtUsuario.Margin = new System.Windows.Forms.Padding(2);
             this.TxtUsuario.Name = "TxtUsuario";
             this.TxtUsuario.Size = new System.Drawing.Size(76, 20);
             this.TxtUsuario.TabIndex = 11;
@@ -173,7 +174,7 @@ namespace TpFinal_Julian_Moyano
             // TxtContraseña
             // 
             this.TxtContraseña.Location = new System.Drawing.Point(414, 211);
-            this.TxtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtContraseña.Margin = new System.Windows.Forms.Padding(2);
             this.TxtContraseña.Name = "TxtContraseña";
             this.TxtContraseña.PasswordChar = '*';
             this.TxtContraseña.Size = new System.Drawing.Size(76, 20);
@@ -181,42 +182,58 @@ namespace TpFinal_Julian_Moyano
             // 
             // BtnModificar
             // 
-            this.BtnModificar.Location = new System.Drawing.Point(282, 306);
-            this.BtnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnModificar.BackColor = System.Drawing.Color.Yellow;
+            this.BtnModificar.ForeColor = System.Drawing.Color.Black;
+            this.BtnModificar.Location = new System.Drawing.Point(283, 337);
+            this.BtnModificar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(62, 35);
+            this.BtnModificar.Size = new System.Drawing.Size(80, 35);
             this.BtnModificar.TabIndex = 13;
             this.BtnModificar.Text = "Modificar";
-            this.BtnModificar.UseVisualStyleBackColor = true;
+            this.BtnModificar.UseVisualStyleBackColor = false;
             this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // BtnAgregar
             // 
-            this.BtnAgregar.Location = new System.Drawing.Point(375, 306);
-            this.BtnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.BtnAgregar.Location = new System.Drawing.Point(378, 337);
+            this.BtnAgregar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(56, 35);
+            this.BtnAgregar.Size = new System.Drawing.Size(80, 35);
             this.BtnAgregar.TabIndex = 14;
             this.BtnAgregar.Text = "Agregar";
-            this.BtnAgregar.UseVisualStyleBackColor = true;
+            this.BtnAgregar.UseVisualStyleBackColor = false;
             this.BtnAgregar.Click += new System.EventHandler(this.BtnAgregar_Click);
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(467, 306);
-            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnEliminar.BackColor = System.Drawing.Color.Red;
+            this.BtnEliminar.Location = new System.Drawing.Point(473, 337);
+            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(56, 35);
+            this.BtnEliminar.Size = new System.Drawing.Size(80, 35);
             this.BtnEliminar.TabIndex = 15;
             this.BtnEliminar.Text = "Eliminar";
-            this.BtnEliminar.UseVisualStyleBackColor = true;
+            this.BtnEliminar.UseVisualStyleBackColor = false;
             this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
+            // BtnSalir
+            // 
+            this.BtnSalir.BackColor = System.Drawing.Color.Red;
+            this.BtnSalir.Location = new System.Drawing.Point(22, 358);
+            this.BtnSalir.Name = "BtnSalir";
+            this.BtnSalir.Size = new System.Drawing.Size(75, 23);
+            this.BtnSalir.TabIndex = 33;
+            this.BtnSalir.Text = "Salir";
+            this.BtnSalir.UseVisualStyleBackColor = false;
+            this.BtnSalir.Click += new System.EventHandler(this.BtnSalir_Click);
             // 
             // FrmClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(600, 393);
+            this.Controls.Add(this.BtnSalir);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.BtnModificar);
@@ -233,9 +250,9 @@ namespace TpFinal_Julian_Moyano
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmClientes";
-            this.Text = "Form1";
+            this.Text = "Proveedores";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvClientes)).EndInit();
             this.ResumeLayout(false);
@@ -261,6 +278,7 @@ namespace TpFinal_Julian_Moyano
         private System.Windows.Forms.Button BtnModificar;
         private System.Windows.Forms.Button BtnAgregar;
         private System.Windows.Forms.Button BtnEliminar;
+        private System.Windows.Forms.Button BtnSalir;
     }
 }
 
