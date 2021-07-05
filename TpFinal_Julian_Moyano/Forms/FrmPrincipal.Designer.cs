@@ -39,7 +39,7 @@ namespace TpFinal_Julian_Moyano.Forms
             this.LblBienvenido.AutoSize = true;
             this.LblBienvenido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblBienvenido.ForeColor = System.Drawing.Color.Red;
-            this.LblBienvenido.Location = new System.Drawing.Point(33, 80);
+            this.LblBienvenido.Location = new System.Drawing.Point(92, 99);
             this.LblBienvenido.Name = "LblBienvenido";
             this.LblBienvenido.Size = new System.Drawing.Size(76, 25);
             this.LblBienvenido.TabIndex = 0;
