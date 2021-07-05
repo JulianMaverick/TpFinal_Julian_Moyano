@@ -57,17 +57,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\FrmInicio.cs">
+    <Compile Include="Forms\FrmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FrmInicio.Designer.cs">
-      <DependentUpon>FrmInicio.cs</DependentUpon>
+    <Compile Include="Forms\FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmProveedor.Designer.cs">
+      <DependentUpon>FrmProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202106262131473_MigracionInicial.cs" />
     <Compile Include="Migrations\202106262131473_MigracionInicial.designer.cs">
@@ -85,15 +91,19 @@
     <Compile Include="Modelos\Context.cs" />
     <Compile Include="Modelos\Proveedor.cs" />
     <Compile Include="Modelos\RepositorioClientes.cs" />
+    <Compile Include="Modelos\RepositorioProveedores.cs" />
     <Compile Include="Modelos\RepositorioUsuarios.cs" />
     <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\FrmInicio.resx">
-      <DependentUpon>FrmInicio.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmProveedor.resx">
+      <DependentUpon>FrmProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202106262131473_MigracionInicial.resx">
       <DependentUpon>202106262131473_MigracionInicial.cs</DependentUpon>

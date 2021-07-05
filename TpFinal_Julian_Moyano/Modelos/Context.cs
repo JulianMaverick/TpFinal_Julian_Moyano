@@ -8,7 +8,7 @@ namespace TpFinal_Julian_Moyano.Modelos
     {
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
-        public DbSet<Proveedor> Provedores { get; set; }
+        public DbSet<Proveedor> Proveedors { get; set; }
 
         // El contexto se ha configurado para usar una cadena de conexión 'Context' del archivo 
         // de configuración de la aplicación (App.config o Web.config). De forma predeterminada, 

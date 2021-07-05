@@ -51,94 +51,104 @@ namespace TpFinal_Julian_Moyano
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(373, 49);
+            this.label1.Location = new System.Drawing.Point(280, 40);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 17);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(373, 89);
+            this.label2.Location = new System.Drawing.Point(280, 72);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 17);
+            this.label2.Size = new System.Drawing.Size(111, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Fecha de Nacimiento ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(373, 136);
+            this.label3.Location = new System.Drawing.Point(280, 110);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 17);
+            this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Estado:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(373, 182);
+            this.label4.Location = new System.Drawing.Point(280, 148);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 17);
+            this.label4.Size = new System.Drawing.Size(92, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Condicion de IVA:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(373, 224);
+            this.label5.Location = new System.Drawing.Point(280, 182);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 17);
+            this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Usuario:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(373, 265);
+            this.label6.Location = new System.Drawing.Point(280, 215);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 17);
+            this.label6.Size = new System.Drawing.Size(64, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Contraseña:";
             // 
             // DgvClientes
             // 
             this.DgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvClientes.Location = new System.Drawing.Point(30, 46);
+            this.DgvClientes.Location = new System.Drawing.Point(22, 37);
+            this.DgvClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DgvClientes.MultiSelect = false;
             this.DgvClientes.Name = "DgvClientes";
             this.DgvClientes.ReadOnly = true;
             this.DgvClientes.RowHeadersWidth = 51;
             this.DgvClientes.RowTemplate.Height = 24;
             this.DgvClientes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvClientes.Size = new System.Drawing.Size(288, 354);
+            this.DgvClientes.Size = new System.Drawing.Size(216, 288);
             this.DgvClientes.TabIndex = 6;
             this.DgvClientes.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvClientes_CellClick);
             // 
             // TxtNombre
             // 
             this.TxtNombre.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.TxtNombre.Location = new System.Drawing.Point(552, 44);
+            this.TxtNombre.Location = new System.Drawing.Point(414, 36);
+            this.TxtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtNombre.Name = "TxtNombre";
-            this.TxtNombre.Size = new System.Drawing.Size(100, 22);
+            this.TxtNombre.Size = new System.Drawing.Size(76, 20);
             this.TxtNombre.TabIndex = 7;
             // 
             // DtpFechaNac
             // 
             this.DtpFechaNac.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DtpFechaNac.Location = new System.Drawing.Point(552, 84);
+            this.DtpFechaNac.Location = new System.Drawing.Point(414, 68);
+            this.DtpFechaNac.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DtpFechaNac.Name = "DtpFechaNac";
-            this.DtpFechaNac.Size = new System.Drawing.Size(100, 22);
+            this.DtpFechaNac.Size = new System.Drawing.Size(76, 20);
             this.DtpFechaNac.TabIndex = 8;
             this.DtpFechaNac.ValueChanged += new System.EventHandler(this.DtpFechaNac_ValueChanged);
             // 
             // ChbEstado
             // 
             this.ChbEstado.AutoSize = true;
-            this.ChbEstado.Location = new System.Drawing.Point(554, 135);
+            this.ChbEstado.Location = new System.Drawing.Point(416, 110);
+            this.ChbEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChbEstado.Name = "ChbEstado";
-            this.ChbEstado.Size = new System.Drawing.Size(92, 21);
+            this.ChbEstado.Size = new System.Drawing.Size(74, 17);
             this.ChbEstado.TabIndex = 9;
             this.ChbEstado.Text = "¿ Activo ?";
             this.ChbEstado.UseVisualStyleBackColor = true;
@@ -146,31 +156,35 @@ namespace TpFinal_Julian_Moyano
             // CbIVA
             // 
             this.CbIVA.FormattingEnabled = true;
-            this.CbIVA.Location = new System.Drawing.Point(552, 175);
+            this.CbIVA.Location = new System.Drawing.Point(414, 142);
+            this.CbIVA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CbIVA.Name = "CbIVA";
-            this.CbIVA.Size = new System.Drawing.Size(100, 24);
+            this.CbIVA.Size = new System.Drawing.Size(76, 21);
             this.CbIVA.TabIndex = 10;
             // 
             // TxtUsuario
             // 
-            this.TxtUsuario.Location = new System.Drawing.Point(552, 219);
+            this.TxtUsuario.Location = new System.Drawing.Point(414, 178);
+            this.TxtUsuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtUsuario.Name = "TxtUsuario";
-            this.TxtUsuario.Size = new System.Drawing.Size(100, 22);
+            this.TxtUsuario.Size = new System.Drawing.Size(76, 20);
             this.TxtUsuario.TabIndex = 11;
             // 
             // TxtContraseña
             // 
-            this.TxtContraseña.Location = new System.Drawing.Point(552, 260);
+            this.TxtContraseña.Location = new System.Drawing.Point(414, 211);
+            this.TxtContraseña.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtContraseña.Name = "TxtContraseña";
             this.TxtContraseña.PasswordChar = '*';
-            this.TxtContraseña.Size = new System.Drawing.Size(100, 22);
+            this.TxtContraseña.Size = new System.Drawing.Size(76, 20);
             this.TxtContraseña.TabIndex = 12;
             // 
             // BtnModificar
             // 
-            this.BtnModificar.Location = new System.Drawing.Point(376, 377);
+            this.BtnModificar.Location = new System.Drawing.Point(282, 306);
+            this.BtnModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(75, 43);
+            this.BtnModificar.Size = new System.Drawing.Size(62, 35);
             this.BtnModificar.TabIndex = 13;
             this.BtnModificar.Text = "Modificar";
             this.BtnModificar.UseVisualStyleBackColor = true;
@@ -178,9 +192,10 @@ namespace TpFinal_Julian_Moyano
             // 
             // BtnAgregar
             // 
-            this.BtnAgregar.Location = new System.Drawing.Point(500, 377);
+            this.BtnAgregar.Location = new System.Drawing.Point(375, 306);
+            this.BtnAgregar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnAgregar.Name = "BtnAgregar";
-            this.BtnAgregar.Size = new System.Drawing.Size(75, 43);
+            this.BtnAgregar.Size = new System.Drawing.Size(56, 35);
             this.BtnAgregar.TabIndex = 14;
             this.BtnAgregar.Text = "Agregar";
             this.BtnAgregar.UseVisualStyleBackColor = true;
@@ -188,9 +203,10 @@ namespace TpFinal_Julian_Moyano
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.Location = new System.Drawing.Point(623, 377);
+            this.BtnEliminar.Location = new System.Drawing.Point(467, 306);
+            this.BtnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnEliminar.Name = "BtnEliminar";
-            this.BtnEliminar.Size = new System.Drawing.Size(75, 43);
+            this.BtnEliminar.Size = new System.Drawing.Size(56, 35);
             this.BtnEliminar.TabIndex = 15;
             this.BtnEliminar.Text = "Eliminar";
             this.BtnEliminar.UseVisualStyleBackColor = true;
@@ -198,9 +214,9 @@ namespace TpFinal_Julian_Moyano
             // 
             // FrmClientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.BtnAgregar);
             this.Controls.Add(this.BtnModificar);
@@ -217,6 +233,7 @@ namespace TpFinal_Julian_Moyano
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FrmClientes";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
